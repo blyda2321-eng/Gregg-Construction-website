@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-charcoal-900 bg-ivory-100 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Luxury Button Styles */
+  .btn-primary {
+    @apply px-8 py-4 bg-gold-500 text-charcoal-950 font-semibold rounded-none
+           hover:bg-gold-400 transition-all duration-300 ease-out
+           shadow-luxury hover:shadow-gold-glow
+           uppercase tracking-widest text-sm;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 bg-transparent text-charcoal-900 font-semibold rounded-none
+           border-2 border-charcoal-900 hover:bg-charcoal-900 hover:text-ivory-100
+           transition-all duration-300 ease-out uppercase tracking-widest text-sm;
+  }
+  
+  .btn-dark {
+    @apply px-8 py-4 bg-charcoal-900 text-ivory-100 font-semibold rounded-none
+           hover:bg-charcoal-700 transition-all duration-300 ease-out
+           uppercase tracking-widest text-sm;
+  }
+  
+  /* Luxury Input Styles */
+  .input-luxury {
+    @apply w-full px-4 py-4 bg-ivory-50 border-b-2 border-charcoal-200
+           focus:border-gold-500 focus:outline-none focus:ring-0
+           transition-all duration-300 text-charcoal-900
+           placeholder:text-charcoal-400;
+  }
+  
+  .input-dark {
+    @apply w-full px-4 py-4 bg-charcoal-800 border-b-2 border-charcoal-600
+           focus:border-gold-500 focus:outline-none focus:ring-0
+           transition-all duration-300 text-ivory-100
+           placeholder:text-charcoal-400;
+  }
+  
+  /* Luxury Card Styles */
+  .card-luxury {
+    @apply bg-white shadow-luxury hover:shadow-luxury-lg
+           transition-all duration-500 ease-out overflow-hidden;
+  }
+  
+  .card-dark {
+    @apply bg-charcoal-900 text-ivory-100 shadow-luxury-lg
+           transition-all duration-500 ease-out overflow-hidden;
+  }
+  
+  /* Section Styles */
+  .section-padding {
+    @apply py-20 md:py-32 px-6 md:px-12 lg:px-20;
+  }
+  
+  /* Gold Accent Line */
+  .gold-line {
+    @apply w-16 h-0.5 bg-gold-500;
+  }
+  
+  .gold-line-long {
+    @apply w-32 h-0.5 bg-gold-500;
+  }
+  
+  /* Luxury Badge */
+  .badge-gold {
+    @apply inline-flex items-center px-3 py-1 bg-gold-500/10 text-gold-600
+           text-xs font-semibold uppercase tracking-wider;
+  }
+  
+  .badge-premium {
+    @apply inline-flex items-center px-3 py-1 bg-charcoal-900 text-gold-500
+           text-xs font-semibold uppercase tracking-wider;
+  }
+  
+  /* Status Badges */
+  .status-draft { @apply bg-charcoal-200 text-charcoal-700; }
+  .status-design { @apply bg-blue-100 text-blue-700; }
+  .status-review { @apply bg-amber-100 text-amber-700; }
+  .status-approved { @apply bg-green-100 text-green-700; }
+  .status-build { @apply bg-purple-100 text-purple-700; }
+  .status-completed { @apply bg-gold-100 text-gold-700; }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gold-gradient;
+  }
+  
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, #D4AF37 0%, #F5D76E 100%) 1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-charcoal-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-charcoal-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-charcoal-500;
+}

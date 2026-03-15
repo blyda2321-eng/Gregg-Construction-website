@@ -1,0 +1,97 @@
+frontend/
+│
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+│       └── images/
+│
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Loader.jsx
+│   │   │   ├── Alert.jsx
+│   │   │   └── Badge.jsx
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── LoginForm.jsx
+│   │   │   ├── RegisterForm.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   ├── projects/
+│   │   │   ├── ProjectCard.jsx
+│   │   │   ├── ProjectList.jsx
+│   │   │   ├── ProjectForm.jsx
+│   │   │   ├── ProjectDetails.jsx
+│   │   │   └── ProjectStatus.jsx
+│   │   │
+│   │   ├── materials/
+│   │   │   ├── CategoryNav.jsx
+│   │   │   ├── MaterialCard.jsx
+│   │   │   ├── MaterialGrid.jsx
+│   │   │   ├── MaterialDetail.jsx
+│   │   │   ├── MaterialFilter.jsx
+│   │   │   └── SmartHomeCard.jsx
+│   │   │
+│   │   ├── selections/
+│   │   │   ├── SelectionList.jsx
+│   │   │   ├── SelectionSummary.jsx
+│   │   │   └── SelectionItem.jsx
+│   │   │
+│   │   └── contractor/
+│   │       ├── EstimateBuilder.jsx
+│   │       ├── TakeoffView.jsx
+│   │       ├── PricingTable.jsx
+│   │       └── ClientList.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── ProjectCreate.jsx
+│   │   ├── ProjectDetail.jsx
+│   │   ├── MaterialSelection.jsx
+│   │   ├── SmartHome.jsx
+│   │   ├── ProjectSummary.jsx
+│   │   ├── ContractorDashboard.jsx
+│   │   ├── EstimatePage.jsx
+│   │   └── Profile.jsx
+│   │
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── projects.js
+│   │   ├── materials.js
+│   │   └── estimates.js
+│   │
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── ProjectContext.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   ├── useProjects.js
+│   │   └── useMaterials.js
+│   │
+│   ├── styles/
+│   │   ├── index.css
+│   │   └── luxury-theme.css
+│   │
+│   ├── utils/
+│   │   ├── formatters.js
+│   │   └── validators.js
+│   │
+│   ├── App.jsx
+│   ├── index.js
+│   └── routes.jsx
+│
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── .env
